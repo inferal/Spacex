@@ -1,22 +1,89 @@
-*{
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: 'MuseoSansCyrl_2';
+    src: url('../fonts/MuseoSansCyrl_2.eot');
+    src: url('../fonts/MuseoSansCyrl_2.eot') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl_2.woff2') format('woff2'),
+    url('../fonts/MuseoSansCyrl_2.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl_2.ttf') format('truetype'),
+    url('../fonts/MuseoSansCyrl_2.svg#MuseoSansCyrl_2') format('svg');
 }
-body{
-    background: url(../images/fon.png) no-repeat;
-    opacity: 0.7;
+@font-face {
+    font-family: 'MuseoSansCyrl_0';
+    src: url('../fonts/MuseoSansCyrl_0.eot');
+    src: url('../fonts/MuseoSansCyrl_0.eot') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl_0.woff2') format('woff2'),
+    url('../fonts/MuseoSansCyrl_0.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl_0.ttf') format('truetype'),
+    url('../fonts/MuseoSansCyrl_0.svg#MuseoSansCyrl_0') format('svg');
 }
 
-.navbar{
+
+
+
+body{
+    min-width: 320px;
+    font-family: "MuseoSansCyrl", serif;
+}
+
+
+/* HEADER */
+
+header{
+    -webkit-background-size: cover;
+    height: 660px;
+    background: url(../images/fon.png) no-repeat;
+    background-size: cover;
+}
+nav {
     height: 100px;
-    border-top: 1px solid #343339;
+    line-height: 100px;
+    border-bottom: 1px solid rgba(197, 195, 197, 0.3);
+    background: rgba(2, 15, 45, 0.2);
 }
-.container{
-    opacity: 1;    
+
+.menu {
+    list-style-type: none;
 }
-.container li{
-    margin: 0 15px;
+.menu li{
+    display: inline-block;
+    padding: 0 20px;
 }
-a {
+.menu li a {
     color: #fff;
+    padding-bottom: 10px;
 }
+.menu li a:hover,
+.menu li a:focus {
+    text-decoration: none;
+    color: #706f70;
+    border-bottom: 1px solid #706f70;
+}
+
+.logo {
+    padding-top: 25px;
+}
+
+h1{
+    font-size: 58px;
+    font-family: "MuseoSansCyrl";
+    padding-top: 118px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+/*.Путешествие_на_красную_планету {
+    font-size: 45.621px;
+    font-family: "Museo Sans Cyrl";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    -moz-transform: matrix( 1.27134410390151,0,0,1.27134410390151,0,0);
+    -webkit-transform: matrix( 1.27134410390151,0,0,1.27134410390151,0,0);
+    -ms-transform: matrix( 1.27134410390151,0,0,1.27134410390151,0,0);
+    position: absolute;
+    left: 420.676px;
+    top: 215.32px;
+    z-index: 4;
+}*/
+
