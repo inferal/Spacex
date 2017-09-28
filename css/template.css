@@ -1,38 +1,15 @@
-@font-face {
-    font-family: 'MuseoSansCyrl_2';
-    src: url('../fonts/MuseoSansCyrl_2.eot');
-    src: url('../fonts/MuseoSansCyrl_2.eot') format('embedded-opentype'),
-    url('../fonts/MuseoSansCyrl_2.woff2') format('woff2'),
-    url('../fonts/MuseoSansCyrl_2.woff') format('woff'),
-    url('../fonts/MuseoSansCyrl_2.ttf') format('truetype'),
-    url('../fonts/MuseoSansCyrl_2.svg#MuseoSansCyrl_2') format('svg');
-}
-@font-face {
-    font-family: 'MuseoSansCyrl_0';
-    src: url('../fonts/MuseoSansCyrl_0.eot');
-    src: url('../fonts/MuseoSansCyrl_0.eot') format('embedded-opentype'),
-    url('../fonts/MuseoSansCyrl_0.woff2') format('woff2'),
-    url('../fonts/MuseoSansCyrl_0.woff') format('woff'),
-    url('../fonts/MuseoSansCyrl_0.ttf') format('truetype'),
-    url('../fonts/MuseoSansCyrl_0.svg#MuseoSansCyrl_0') format('svg');
-}
-
-
-
 
 body{
-    min-width: 320px;
-    font-family: "MuseoSansCyrl", serif;
+    min-width: 320px; 
 }
 
 
 /* HEADER */
 
 header{
-    -webkit-background-size: cover;
     height: 660px;
     background: url(../images/fon.png) no-repeat;
-    background-size: cover;
+    z-index: -909999;
 }
 nav {
     height: 100px;
@@ -59,31 +36,35 @@ nav {
     border-bottom: 1px solid #706f70;
 }
 
-.logo {
+.navbar-header .logo{
     padding-top: 25px;
 }
-
-h1{
-    font-size: 58px;
-    font-family: "MuseoSansCyrl";
-    padding-top: 118px;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
+.logo {
+    border-right: 1px solid rgba(197, 195, 197, 0.3);
 }
 
-/*.Путешествие_на_красную_планету {
-    font-size: 45.621px;
-    font-family: "Museo Sans Cyrl";
-    color: rgb(255, 255, 255);
+.text{
     text-transform: uppercase;
-    line-height: 1.2;
-    text-align: left;
-    -moz-transform: matrix( 1.27134410390151,0,0,1.27134410390151,0,0);
-    -webkit-transform: matrix( 1.27134410390151,0,0,1.27134410390151,0,0);
-    -ms-transform: matrix( 1.27134410390151,0,0,1.27134410390151,0,0);
-    position: absolute;
-    left: 420.676px;
-    top: 215.32px;
-    z-index: 4;
-}*/
+    
+}
+.text h1{
+    font-size: 54.5px;
+    color: #fff;
+    font-family: "Museo Sans Cyrl 700";
+    padding-top: 118px;
+    line-height: 0.6;
+    clip-path: polygon(0 100%, 0 0, 100% 65%, 95% 100%);
+}
 
+.text p {
+    font-size: 25px;
+    font-family: "Museo Sans Cyrl 300";
+    color: #fff;
+}
+.gradient-text {
+    background: linear-gradient(45deg, #ffffff 22%, #ff4c15 66%, #ff4c15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    
+}
