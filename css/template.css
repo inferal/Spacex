@@ -30,7 +30,7 @@ nav {
     padding: 0 20px;
 }
 .menu li a {
-    color: #e3e3e3;
+    color: #b6b6b6;
     padding-bottom: 10px;
 }
 .menu li a:hover,
@@ -42,14 +42,13 @@ nav {
 
 .navbar-header .logo{
     padding-top: 25px;
-}
-.logo {
-    border-right: 1px solid rgba(197, 195, 197, 0.3);
+    background: url("../images/ygol.png");
+    width: 316px;
+    height: 100px;
 }
 
 .text{
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
 }
 
 .text h1{
@@ -71,22 +70,28 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: table;
-    
 }
 
-.text .button{
+.gradient-text-p {
+    background: linear-gradient(45deg, #ffffff 22%, #ff4c15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+}
+
+.button{
     margin-top: 88px;
-    display: inline-block;
+    position: relative;
     background-color: transparent;
     border: 1px solid #263e66;
     text-align: center;
-    width: 180px;
-    height: 35px;
     color: #9d9d9f;
+    width: 182px;
+    height: 35px;
     font-size: 14px;
     font-family: "Museo Sans Cyrl 100";
-    /*linear-gradient(45deg, #23599c #09213d 36%, #111f2d 63%, #263e66);*/
 }
+
 .skil{
     padding-top: 65px;
 }
@@ -97,7 +102,7 @@ nav {
 .blog{
     margin-top: 10px;
     padding-top: 25px;
-    color: #e3e3e3;
+    color: #b6b6b6;
     width: 180px;
     height: 180px;
 }
